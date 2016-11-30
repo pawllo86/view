@@ -1,0 +1,19 @@
+<div id="main-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li ng-repeat="slider in sliders" data-target="#main-carousel" data-slide-to="{{$index}}" ng-class="{active:slider.active}"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div ng-repeat="slider in sliders" class="item" ng-class="{active:slider.active}" style="background-image: url({{slider.image}})">
+            <div class="carousel-caption">
+                <div>
+                    <h2 class="heading animated bounceInRight">{{slider.title}}</h2>
+                    <p class="animated bounceInLeft">{{slider.description}}</p>
+                    <a class="btn btn-default slider-btn animated bounceInUp" href="#">Zaplanuj wizytę</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="carousel-left member-carousel-control hidden-xs" href="#main-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+    <a class="carousel-right member-carousel-control hidden-xs" href="#main-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+</div>

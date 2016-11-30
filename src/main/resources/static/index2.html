@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <title>Test</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/animate.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.min.css" rel="stylesheet">
+
+    <link href="css/main2.css" rel="stylesheet">
+
     <link href="css/template/preloader.css" rel="stylesheet">
+    <link href="css/template/carousel.css" rel="stylesheet">
 </head>
 <body>
 
-<marp-preloader id="preloader"></marp-preloader>
+<marp-preloader></marp-preloader>
 
-<h1>Hello 2</h1>
-
-{{3+5}}
+<section id="home">
+    <div class="home-pattern"></div>
+    <marp-carousel count="4"></marp-carousel>
+</section>
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/lib/angular.js"></script>
 <script type="text/javascript" src="js/module/basic.js"></script>
-<script type="text/javascript" src="js/template/preloader.js"></script>
 <script type="text/javascript" src="js/application.js"></script>
 
 </body>
